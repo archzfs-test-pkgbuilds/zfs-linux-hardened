@@ -47,7 +47,7 @@ package_zfs-linux-hardened() {
     install=zfs.install
     provides=("zfs")
     groups=("archzfs-linux-hardened")
-    conflicts=("zfs-dkms" "zfs-dkms-git"'zfs-linux-hardened-git')
+    conflicts=("zfs-dkms" "zfs-dkms-git" 'zfs-linux-hardened-git')
     cd "${srcdir}/zfs-${_zfsver}"
     make DESTDIR="${pkgdir}" install
     cp -r "${pkgdir}"/{lib,usr}
