@@ -20,6 +20,7 @@ pkgname = zfs-linux-hardened
 	provides = zfs
 	conflicts = zfs-dkms
 	conflicts = zfs-dkms-git
+	conflicts = zfs-dkms-rc
 	conflicts = zfs-linux-hardened-git
 
 pkgname = zfs-linux-hardened-headers
@@ -28,4 +29,5 @@ pkgname = zfs-linux-hardened-headers
 	conflicts = zfs-headers
 	conflicts = zfs-dkms
 	conflicts = zfs-dkms-git
+	conflicts = zfs-dkms-rc
 
