@@ -48,6 +48,7 @@ package_zfs-linux-hardened() {
     provides=("zfs" "spl")
     groups=("archzfs-linux-hardened")
     conflicts=("zfs-dkms" "zfs-dkms-git" "zfs-dkms-rc" "spl-dkms" "spl-dkms-git")
+    replaces=("spl-linux-hardened")
     cd "${srcdir}/zfs-${_zfsver}"
     make DESTDIR="${pkgdir}" install
     cp -r "${pkgdir}"/{lib,usr}
